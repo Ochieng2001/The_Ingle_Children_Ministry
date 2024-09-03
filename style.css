@@ -1,0 +1,338 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace 'Times New Roman', Times, serif;
+        }
+        /*------------------------this is the design for the body and the header class-------------------------------------*/
+        
+        body {
+            background-image: linear-gradient(rgba(17, 12, 12, 0.5), black), url(images/image.JPG);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .header {
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav img {
+            width: 150px;
+        }
+        
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+        }
+        
+        .nav-links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f443;
+            margin: auto;
+            transition: 0.5s;
+        }
+        
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+        
+        .text-box {
+            width: 90%;
+            position: absolute;
+            top: 430%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        
+        .text-box h1 {
+            font-size: 62px;
+        }
+        
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 30px;
+            color: white;
+        }
+        
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 40px;
+            font-size: 20px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover {
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+        
+        @media(max-width:700px) {
+            .text-box h1 {
+                font-size: 20px;
+            }
+            .nav-links ul li {
+                display: block;
+            }
+            .nav-links {
+                position: absolute;
+                background: #f44336;
+                height: 100vh;
+                width: 100px;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+            }
+        }
+        /*------------------------this is the design for the contact class-------------------------------------*/
+        
+        .contact-container {
+            background-image: linear-gradient(rgba(17, 12, 12, 0.5), black), url(images/comp2.jpg);
+            margin-top: 0;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            bottom: 0;
+            color: #ffffff;
+            font-size: x-large;
+            padding-top: 30px;
+            margin-left: 0;
+            background-color: #4cae4c;
+        }
+        
+        .contact-container h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            margin-left: 285px;
+        }
+        
+        .contact-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-left: 100px;
+        }
+        
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 40%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-left: 100px;
+            color: rgb(0, 0, 0);
+            background-color: #eeeff1;
+        }
+        
+        .contact-container button {
+            width: 8%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 50%;
+            margin-left: 100px;
+        }
+        
+        .contact-container button:hover {
+            background-color: #4cae4c;
+        }
+        
+        #successMessage {
+            text-align: center;
+            color: rgb(250, 250, 250);
+            margin-top: 20px;
+            display: none;
+        }
+        /*---this is the design for the footer class---*/
+        
+        .footer1 {
+            background-color: gray;
+            background-position: center;
+            height: 150px;
+            margin-top: 100vh;
+            position: relative;
+            align-items: start;
+        }
+        
+        .footer1 a {
+            text-decoration: none;
+            padding: 1px;
+            margin-right: 30px;
+            float: inline;
+        }
+        
+        .footer1 h2 {
+            margin-right: 250px;
+            padding: 10px;
+        }
+        
+        .footer1 p {
+            margin-left: 10px;
+            padding: 5px;
+        }
+        
+        .header {
+            height: 70px;
+            margin: auto;
+            margin-top: 0px;
+        }
+        
+        .header a {
+            text-decoration: none;
+            color: white;
+            margin: auto;
+            padding: 10px;
+        }
+        
+        .header a:hover {
+            color: yellow;
+        }
+        
+        .footer_section p {
+            text-align: left;
+            padding: 5px;
+        }
+        
+        .footer_section h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .footer_section a {
+            margin-left: 10px;
+            color: white;
+            padding: 0px;
+            text-align: left;
+            display: inline-flexbox;
+            font-size: 40px;
+            margin: 0px;
+            word-spacing: normal;
+            border-radius: 10px;
+            ;
+        }
+        
+        .footer_section a:hover {
+            color: yellow;
+        }
+        
+        .footer_address {
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+        
+        .footer_address a {
+            color: white;
+            margin-right: 90x;
+        }
+        
+        .footer_address a:hover {
+            color: yellow;
+        }
+        
+        .footer_address p {
+            margin-left: 15px;
+            color: white;
+            padding: 5px;
+        }
+        
+        .footer_address p a {
+            margin-right: 20px;
+        }
+        
+        .footer1 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .header hr {
+            width: 10%;
+            height: 5px;
+            background: white;
+            border-radius: 3px;
+            position: absolute;
+            top: 40px;
+            left: 25px;
+        }
+        
+        .footer_section hr {
+            width: 6%;
+            height: 5px;
+            background: white;
+            border-radius: 3px;
+            position: absolute;
+            top: 40px;
+            left: 655px;
+        }
+        
+        .footer_address hr {
+            width: 5%;
+            height: 5px;
+            background: white;
+            border-radius: 3px;
+            position: absolute;
+            top: 40px;
+            left: 990px;
+        }
+        /*-------the footer section-----.*/
+        
+        footer {
+            margin-bottom: 0;
+            margin-top: 0px;
+        }
+        
+        footer p {
+            text-align: center;
+            color: white;
+            background-color: #000;
+        }
+        
+        @media(maxi-width:100%) {
+            .footer1 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        /*------------------------this is the design for the footer class-------------------------------------*/
